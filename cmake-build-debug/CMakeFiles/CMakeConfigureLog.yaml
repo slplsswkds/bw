@@ -1,0 +1,1771 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.9.3-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/maks/downloads/github/llvm-project/build/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/maks/downloads/github/llvm-project/build/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_c2577
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/maks/downloads/github/llvm-project/build/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/home/maks/downloads/github/llvm-project/build/bin/clang-19" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j -v -fcoverage-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j -resource-dir /home/maks/downloads/github/llvm-project/build/lib/clang/19 -dependency-file CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /home/maks/downloads/github/llvm-project/build/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -x c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/maks/downloads/github/llvm-project/build/lib/clang/19/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang  -v CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -o cmTC_c2577   && :
+        clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/maks/downloads/github/llvm-project/build/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/sbin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c2577 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include] ==> [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_c2577]
+        ignore line: [[1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/maks/downloads/github/llvm-project/build/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/maks/downloads/github/llvm-project/build/bin/clang-19" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j -v -fcoverage-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ur170j -resource-dir /home/maks/downloads/github/llvm-project/build/lib/clang/19 -dependency-file CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /home/maks/downloads/github/llvm-project/build/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -x c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang  -v CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -o cmTC_c2577   && :]
+        ignore line: [clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/maks/downloads/github/llvm-project/build/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/sbin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c2577 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
+          arg [/sbin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c2577] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o]
+          arg [-L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_c2577.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_fc141
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/maks/downloads/github/llvm-project/build/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/home/maks/downloads/github/llvm-project/build/bin/clang-19" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3 -v -fcoverage-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3 -resource-dir /home/maks/downloads/github/llvm-project/build/lib/clang/19 -dependency-file CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /home/maks/downloads/github/llvm-project/build/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu
+         /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward
+         /home/maks/downloads/github/llvm-project/build/lib/clang/19/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang++  -v CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fc141   && :
+        clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/maks/downloads/github/llvm-project/build/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1
+        Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/sbin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fc141 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
+          add: [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1] ==> [/usr/include/c++/14.1.1]
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/14.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward] ==> [/usr/include/c++/14.1.1/backward]
+        collapse include dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include] ==> [/home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14.1.1;/usr/include/c++/14.1.1/x86_64-pc-linux-gnu;/usr/include/c++/14.1.1/backward;/home/maks/downloads/github/llvm-project/build/lib/clang/19/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_fc141]
+        ignore line: [[1/2] /home/maks/downloads/github/llvm-project/build/bin/clang++   -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/maks/downloads/github/llvm-project/build/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/maks/downloads/github/llvm-project/build/bin/clang-19" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3 -v -fcoverage-compilation-dir=/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o9d9R3 -resource-dir /home/maks/downloads/github/llvm-project/build/lib/clang/19 -dependency-file CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1 -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward -internal-isystem /home/maks/downloads/github/llvm-project/build/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../include/c++/14.1.1/backward]
+        ignore line: [ /home/maks/downloads/github/llvm-project/build/lib/clang/19/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang++  -v CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fc141   && :]
+        ignore line: [clang version 19.0.0git (https://github.com/llvm/llvm-project.git d337c504ef3652e9ccd75b21bbc79d010ee6c637)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/maks/downloads/github/llvm-project/build/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Selected GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/sbin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_fc141 /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o -L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1 -L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o /usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
+          arg [/sbin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fc141] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o]
+          arg [-L/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+          arg [-L/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_fc141.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/home/maks/downloads/github/llvm-project/build/lib/clang/19/lib/x86_64-unknown-linux-gnu;/usr/lib64/gcc/x86_64-pc-linux-gnu/14.1.1;/usr/lib64;/lib64;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "wavelib/src/CMakeLists.txt:32 (check_symbol_exists)"
+    checks:
+      - "Looking for pow"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-evwzMd"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-evwzMd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/wavelib/cmake"
+    buildResult:
+      variable: "POW_FUNCTION_EXISTS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-evwzMd'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_bf949
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-evwzMd/CheckSymbolExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang  -rdynamic CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o -o cmTC_bf949   && :
+        \x1b[31mFAILED: \x1b[0mcmTC_bf949 
+        : && /home/maks/downloads/github/llvm-project/build/bin/clang  -rdynamic CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o -o cmTC_bf949   && :
+        /sbin/ld: CMakeFiles/cmTC_bf949.dir/CheckSymbolExists.c.o: in function `main':
+        CheckSymbolExists.c:(.text+0x19): undefined reference to `pow'
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "wavelib/src/CMakeLists.txt:36 (check_symbol_exists)"
+    checks:
+      - "Looking for pow"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HK5nKf"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HK5nKf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/wavelib/cmake"
+    buildResult:
+      variable: "POW_FUNCTION_EXISTS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HK5nKf'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_b7460
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_b7460.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_b7460.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_b7460.dir/CheckSymbolExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HK5nKf/CheckSymbolExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang  -rdynamic CMakeFiles/cmTC_b7460.dir/CheckSymbolExists.c.o -o cmTC_b7460  -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "fltk/CMake/setup.cmake:167 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Ju7617"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Ju7617"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Ju7617'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_d3249
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_d3249.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_d3249.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_d3249.dir/CheckIncludeFile.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Ju7617/CheckIncludeFile.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_d3249.dir/CheckIncludeFile.c.o -o cmTC_d3249   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "fltk/CMake/setup.cmake:167 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7AwU1K"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7AwU1K"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7AwU1K'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_ba529
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_ba529.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_ba529.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_ba529.dir/CheckIncludeFile.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7AwU1K/CheckIncludeFile.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_ba529.dir/CheckIncludeFile.c.o -o cmTC_ba529   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "fltk/CMake/setup.cmake:167 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-niHljC"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-niHljC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-niHljC'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_baad9
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_baad9.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_baad9.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_baad9.dir/CheckIncludeFile.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-niHljC/CheckIncludeFile.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_baad9.dir/CheckIncludeFile.c.o -o cmTC_baad9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:167 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0LavC2"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0LavC2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SIZEOF_SHORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0LavC2'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_44cdf
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_44cdf.dir/SIZEOF_SHORT.c.o -MF CMakeFiles/cmTC_44cdf.dir/SIZEOF_SHORT.c.o.d -o CMakeFiles/cmTC_44cdf.dir/SIZEOF_SHORT.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0LavC2/SIZEOF_SHORT.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_44cdf.dir/SIZEOF_SHORT.c.o -o cmTC_44cdf   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:168 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GyEcYS"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GyEcYS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SIZEOF_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GyEcYS'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_2a6e7
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_2a6e7.dir/SIZEOF_INT.c.o -MF CMakeFiles/cmTC_2a6e7.dir/SIZEOF_INT.c.o.d -o CMakeFiles/cmTC_2a6e7.dir/SIZEOF_INT.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GyEcYS/SIZEOF_INT.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_2a6e7.dir/SIZEOF_INT.c.o -o cmTC_2a6e7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:169 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mZwT1U"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mZwT1U"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mZwT1U'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_36701
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_36701.dir/SIZEOF_LONG.c.o -MF CMakeFiles/cmTC_36701.dir/SIZEOF_LONG.c.o.d -o CMakeFiles/cmTC_36701.dir/SIZEOF_LONG.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mZwT1U/SIZEOF_LONG.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_36701.dir/SIZEOF_LONG.c.o -o cmTC_36701   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:170 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WKtSnX"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WKtSnX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_HAVE_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WKtSnX'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_124f1
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_124f1.dir/HAVE_LONG_LONG.c.o -MF CMakeFiles/cmTC_124f1.dir/HAVE_LONG_LONG.c.o.d -o CMakeFiles/cmTC_124f1.dir/HAVE_LONG_LONG.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WKtSnX/HAVE_LONG_LONG.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_124f1.dir/HAVE_LONG_LONG.c.o -o cmTC_124f1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:56 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tQrFAI"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tQrFAI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_ALSA_ASOUNDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tQrFAI'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_87f99
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_87f99.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -MF CMakeFiles/cmTC_87f99.dir/HAVE_ALSA_ASOUNDLIB_H.c.o.d -o CMakeFiles/cmTC_87f99.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tQrFAI/HAVE_ALSA_ASOUNDLIB_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_87f99.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -o cmTC_87f99   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:57 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UOG2bT"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UOG2bT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UOG2bT'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_0e3e6
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_0e3e6.dir/HAVE_DLFCN_H.c.o -MF CMakeFiles/cmTC_0e3e6.dir/HAVE_DLFCN_H.c.o.d -o CMakeFiles/cmTC_0e3e6.dir/HAVE_DLFCN_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-UOG2bT/HAVE_DLFCN_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_0e3e6.dir/HAVE_DLFCN_H.c.o -o cmTC_0e3e6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:58 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DXYgHS"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DXYgHS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_GL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DXYgHS'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_c4939
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_c4939.dir/HAVE_GL_GLU_H.c.o -MF CMakeFiles/cmTC_c4939.dir/HAVE_GL_GLU_H.c.o.d -o CMakeFiles/cmTC_c4939.dir/HAVE_GL_GLU_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DXYgHS/HAVE_GL_GLU_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_c4939.dir/HAVE_GL_GLU_H.c.o -o cmTC_c4939   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:59 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ofh7PF"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ofh7PF"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_LOCALE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ofh7PF'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_652e1
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_652e1.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_652e1.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_652e1.dir/HAVE_LOCALE_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ofh7PF/HAVE_LOCALE_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_652e1.dir/HAVE_LOCALE_H.c.o -o cmTC_652e1   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:60 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_OPENGL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_3dc99
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o -MF CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o.d -o CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK/HAVE_OPENGL_GLU_H.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o 
+        /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o -MF CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o.d -o CMakeFiles/cmTC_3dc99.dir/HAVE_OPENGL_GLU_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK/HAVE_OPENGL_GLU_H.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-SNaQHK/HAVE_OPENGL_GLU_H.c:2:10: fatal error: 'OpenGL/glu.h' file not found
+            2 | #include <OpenGL/glu.h>
+              |          ^~~~~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:61 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4KNw5M"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4KNw5M"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STDIO_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4KNw5M'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_fcf19
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_fcf19.dir/HAVE_STDIO_H.c.o -MF CMakeFiles/cmTC_fcf19.dir/HAVE_STDIO_H.c.o.d -o CMakeFiles/cmTC_fcf19.dir/HAVE_STDIO_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4KNw5M/HAVE_STDIO_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_fcf19.dir/HAVE_STDIO_H.c.o -o cmTC_fcf19   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:62 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gZxotb"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gZxotb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gZxotb'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_15d8e
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_15d8e.dir/HAVE_STRINGS_H.c.o -MF CMakeFiles/cmTC_15d8e.dir/HAVE_STRINGS_H.c.o.d -o CMakeFiles/cmTC_15d8e.dir/HAVE_STRINGS_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gZxotb/HAVE_STRINGS_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_15d8e.dir/HAVE_STRINGS_H.c.o -o cmTC_15d8e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:63 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3UwkK6"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3UwkK6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SYS_SELECT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3UwkK6'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_f1dee
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_f1dee.dir/HAVE_SYS_SELECT_H.c.o -MF CMakeFiles/cmTC_f1dee.dir/HAVE_SYS_SELECT_H.c.o.d -o CMakeFiles/cmTC_f1dee.dir/HAVE_SYS_SELECT_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3UwkK6/HAVE_SYS_SELECT_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_f1dee.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_f1dee   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:64 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SYS_STDTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_46130
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o -MF CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o.d -o CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft/HAVE_SYS_STDTYPES_H.c
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o 
+        /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o -MF CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o.d -o CMakeFiles/cmTC_46130.dir/HAVE_SYS_STDTYPES_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft/HAVE_SYS_STDTYPES_H.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fkBwft/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: 'sys/stdtypes.h' file not found
+            2 | #include <sys/stdtypes.h>
+              |          ^~~~~~~~~~~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:66 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Oqaj9"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Oqaj9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_X11_XREGION_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Oqaj9'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_5e885
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_5e885.dir/HAVE_X11_XREGION_H.c.o -MF CMakeFiles/cmTC_5e885.dir/HAVE_X11_XREGION_H.c.o.d -o CMakeFiles/cmTC_5e885.dir/HAVE_X11_XREGION_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1Oqaj9/HAVE_X11_XREGION_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_5e885.dir/HAVE_X11_XREGION_H.c.o -o cmTC_5e885   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:72 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VtazDe"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VtazDe"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VtazDe'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_c9d90
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_c9d90.dir/HAVE_PTHREAD_H.c.o -MF CMakeFiles/cmTC_c9d90.dir/HAVE_PTHREAD_H.c.o.d -o CMakeFiles/cmTC_c9d90.dir/HAVE_PTHREAD_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VtazDe/HAVE_PTHREAD_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_c9d90.dir/HAVE_PTHREAD_H.c.o -o cmTC_c9d90   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:78 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+      binary: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_RECURSIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_d369b
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_d369b.dir/pthread_mutex_recursive.c.o -MF CMakeFiles/cmTC_d369b.dir/pthread_mutex_recursive.c.o.d -o CMakeFiles/cmTC_d369b.dir/pthread_mutex_recursive.c.o -c /home/maks/devel/bw/fltk/CMake/pthread_mutex_recursive.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_d369b.dir/pthread_mutex_recursive.c.o -o cmTC_d369b   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "fltk/CMake/resources.cmake:32 (check_include_files)"
+      - "fltk/CMake/resources.cmake:119 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0mJpVi"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0mJpVi"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_DIRENT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0mJpVi'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_3687c
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_3687c.dir/HAVE_DIRENT_H.c.o -MF CMakeFiles/cmTC_3687c.dir/HAVE_DIRENT_H.c.o.d -o CMakeFiles/cmTC_3687c.dir/HAVE_DIRENT_H.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0mJpVi/HAVE_DIRENT_H.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_3687c.dir/HAVE_DIRENT_H.c.o -o cmTC_3687c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:186 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pS1g22"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pS1g22"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_DLSYM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pS1g22'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_d99d6
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=dlsym -MD -MT CMakeFiles/cmTC_d99d6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_d99d6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_d99d6.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pS1g22/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=dlsym  CMakeFiles/cmTC_d99d6.dir/CheckFunctionExists.c.o -o cmTC_d99d6  -ldl && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:189 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JZH5IG"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JZH5IG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_LOCALECONV"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JZH5IG'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_87835
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=localeconv -MD -MT CMakeFiles/cmTC_87835.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_87835.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_87835.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JZH5IG/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=localeconv  CMakeFiles/cmTC_87835.dir/CheckFunctionExists.c.o -o cmTC_87835   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:193 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-XQMHLm"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-XQMHLm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PNG_GET_VALID"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-XQMHLm'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_27dab
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=png_get_valid -MD -MT CMakeFiles/cmTC_27dab.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_27dab.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_27dab.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-XQMHLm/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=png_get_valid  CMakeFiles/cmTC_27dab.dir/CheckFunctionExists.c.o -o cmTC_27dab  /usr/lib/libpng.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:194 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0c4TX5"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0c4TX5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PNG_SET_TRNS_TO_ALPHA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0c4TX5'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_b16f1
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha -MD -MT CMakeFiles/cmTC_b16f1.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b16f1.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b16f1.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0c4TX5/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=png_set_tRNS_to_alpha  CMakeFiles/cmTC_b16f1.dir/CheckFunctionExists.c.o -o cmTC_b16f1  /usr/lib/libpng.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:198 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WBd22X"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WBd22X"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SCANDIR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WBd22X'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_de4c4
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=scandir -MD -MT CMakeFiles/cmTC_de4c4.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_de4c4.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_de4c4.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WBd22X/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=scandir  CMakeFiles/cmTC_de4c4.dir/CheckFunctionExists.c.o -o cmTC_de4c4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:199 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_c97ba
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=snprintf -MD -MT CMakeFiles/cmTC_c97ba.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c97ba.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c97ba.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'snprintf' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS snprintf
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2Aru59/CheckFunctionExists.c:7:3: note: 'snprintf' is a builtin with type 'int (char *restrict, unsigned long, const char *restrict, ...)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS snprintf
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=snprintf  CMakeFiles/cmTC_c97ba.dir/CheckFunctionExists.c.o -o cmTC_c97ba   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:206 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STRCASECMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_f8c13
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=strcasecmp -MD -MT CMakeFiles/cmTC_f8c13.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_f8c13.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_f8c13.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strcasecmp' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strcasecmp
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hr2LKd/CheckFunctionExists.c:7:3: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strcasecmp
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=strcasecmp  CMakeFiles/cmTC_f8c13.dir/CheckFunctionExists.c.o -o cmTC_f8c13   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:208 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STRLCAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_60ac9
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=strlcat -MD -MT CMakeFiles/cmTC_60ac9.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_60ac9.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_60ac9.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcat
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0iBPzV/CheckFunctionExists.c:7:3: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcat
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=strlcat  CMakeFiles/cmTC_60ac9.dir/CheckFunctionExists.c.o -o cmTC_60ac9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:209 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_STRLCPY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_ca575
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=strlcpy -MD -MT CMakeFiles/cmTC_ca575.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_ca575.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_ca575.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcpy
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qM8O6x/CheckFunctionExists.c:7:3: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS strlcpy
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=strlcpy  CMakeFiles/cmTC_ca575.dir/CheckFunctionExists.c.o -o cmTC_ca575   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:210 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_VSNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_68b69
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=vsnprintf -MD -MT CMakeFiles/cmTC_68b69.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_68b69.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_68b69.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'vsnprintf' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS vsnprintf
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6g6Iuh/CheckFunctionExists.c:7:3: note: 'vsnprintf' is a builtin with type 'int (char *restrict, unsigned long, const char *restrict, struct __va_list_tag *)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS vsnprintf
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=vsnprintf  CMakeFiles/cmTC_68b69.dir/CheckFunctionExists.c.o -o cmTC_68b69   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:212 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ge3qCN"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ge3qCN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_SETENV"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ge3qCN'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_e427c
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=setenv -MD -MT CMakeFiles/cmTC_e427c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e427c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e427c.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ge3qCN/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=setenv  CMakeFiles/cmTC_e427c.dir/CheckFunctionExists.c.o -o cmTC_e427c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/resources.cmake:218 (check_function_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_TRUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_5b9d6
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=trunc -MD -MT CMakeFiles/cmTC_5b9d6.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_5b9d6.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_5b9d6.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7/CheckFunctionExists.c
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'trunc' [-Wincompatible-library-redeclaration]
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS trunc
+              |                               ^
+        /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8OCMF7/CheckFunctionExists.c:7:3: note: 'trunc' is a builtin with type 'double (double)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+            1 | #define CHECK_FUNCTION_EXISTS trunc
+              |                               ^
+        1 warning generated.
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=trunc  CMakeFiles/cmTC_5b9d6.dir/CheckFunctionExists.c.o -o cmTC_5b9d6  -lm && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:224 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+      binary: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "V"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_d1382
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang++   -std=gnu++23 -MD -MT CMakeFiles/cmTC_d1382.dir/posixScandir.cxx.o -MF CMakeFiles/cmTC_d1382.dir/posixScandir.cxx.o.d -o CMakeFiles/cmTC_d1382.dir/posixScandir.cxx.o -c /home/maks/devel/bw/fltk/CMake/posixScandir.cxx
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang++   CMakeFiles/cmTC_d1382.dir/posixScandir.cxx.o -o cmTC_d1382   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "fltk/CMake/options.cmake:225 (check_include_file)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for png.h"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y33UOE"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y33UOE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PNG_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y33UOE'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_82b88
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_82b88.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_82b88.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_82b88.dir/CheckIncludeFile.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y33UOE/CheckIncludeFile.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_82b88.dir/CheckIncludeFile.c.o -o cmTC_82b88   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NWv1mb"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NWv1mb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NWv1mb'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_bebba
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -MD -MT CMakeFiles/cmTC_bebba.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_bebba.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_bebba.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NWv1mb/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=XOpenDisplay  CMakeFiles/cmTC_bebba.dir/CheckFunctionExists.c.o -o cmTC_bebba  /usr/lib/libX11.so  /usr/lib/libXext.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uNRn8C"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uNRn8C"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uNRn8C'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_8ade4
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=gethostbyname -MD -MT CMakeFiles/cmTC_8ade4.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_8ade4.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_8ade4.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uNRn8C/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=gethostbyname  CMakeFiles/cmTC_8ade4.dir/CheckFunctionExists.c.o -o cmTC_8ade4   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nj5i6g"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nj5i6g"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nj5i6g'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_01a60
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=connect -MD -MT CMakeFiles/cmTC_01a60.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_01a60.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_01a60.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nj5i6g/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=connect  CMakeFiles/cmTC_01a60.dir/CheckFunctionExists.c.o -o cmTC_01a60   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hFqNLn"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hFqNLn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hFqNLn'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_81876
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=remove -MD -MT CMakeFiles/cmTC_81876.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_81876.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_81876.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hFqNLn/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=remove  CMakeFiles/cmTC_81876.dir/CheckFunctionExists.c.o -o cmTC_81876   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atzrpa"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atzrpa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atzrpa'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_cb64a
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=shmat -MD -MT CMakeFiles/cmTC_cb64a.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_cb64a.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_cb64a.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atzrpa/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=shmat  CMakeFiles/cmTC_cb64a.dir/CheckFunctionExists.c.o -o cmTC_cb64a   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "fltk/CMake/options.cmake:393 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VbqTVt"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VbqTVt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VbqTVt'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_79728
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -MD -MT CMakeFiles/cmTC_79728.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_79728.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_79728.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VbqTVt/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=IceConnectionNumber  CMakeFiles/cmTC_79728.dir/CheckFunctionExists.c.o -o cmTC_79728  -lICE && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "fltk/CMake/options.cmake:702 (check_function_exists)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Looking for glXGetProcAddressARB"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TC7KDz"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TC7KDz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_GLXGETPROCADDRESSARB"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TC7KDz'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_38c91
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang  -I/usr/include/GL -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB -MD -MT CMakeFiles/cmTC_38c91.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_38c91.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_38c91.dir/CheckFunctionExists.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TC7KDz/CheckFunctionExists.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB  CMakeFiles/cmTC_38c91.dir/CheckFunctionExists.c.o -o cmTC_38c91  -L/usr/lib  -L/usr/lib  -lX11  -lGLU  -lGL && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/clion-2024.1.2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "fltk/CMake/options.cmake:739 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o8uAlz"
+      binary: "/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o8uAlz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o8uAlz'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_efddc
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD -I/usr/include/GL  -MD -MT CMakeFiles/cmTC_efddc.dir/src.c.o -MF CMakeFiles/cmTC_efddc.dir/src.c.o.d -o CMakeFiles/cmTC_efddc.dir/src.c.o -c /home/maks/devel/bw/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o8uAlz/src.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_efddc.dir/src.c.o -o cmTC_efddc   && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:78 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+      binary: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_RECURSIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_8f653
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_8f653.dir/pthread_mutex_recursive.c.o -MF CMakeFiles/cmTC_8f653.dir/pthread_mutex_recursive.c.o.d -o CMakeFiles/cmTC_8f653.dir/pthread_mutex_recursive.c.o -c /home/maks/devel/bw/fltk/CMake/pthread_mutex_recursive.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_8f653.dir/pthread_mutex_recursive.c.o -o cmTC_8f653   && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:78 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+      binary: "/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/home/maks/downloads/github/llvm-project/build/bin/clang-scan-deps"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/maks/devel/bw/fltk/CMake"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_RECURSIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/maks/devel/bw/cmake-build-debug/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/clion-2024.1.2/bin/ninja/linux/x64/ninja -v cmTC_b13a8
+        [1/2] /home/maks/downloads/github/llvm-project/build/bin/clang    -MD -MT CMakeFiles/cmTC_b13a8.dir/pthread_mutex_recursive.c.o -MF CMakeFiles/cmTC_b13a8.dir/pthread_mutex_recursive.c.o.d -o CMakeFiles/cmTC_b13a8.dir/pthread_mutex_recursive.c.o -c /home/maks/devel/bw/fltk/CMake/pthread_mutex_recursive.c
+        [2/2] : && /home/maks/downloads/github/llvm-project/build/bin/clang   CMakeFiles/cmTC_b13a8.dir/pthread_mutex_recursive.c.o -o cmTC_b13a8   && :
+        
+      exitCode: 0
+...
