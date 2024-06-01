@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"wavelib/unitTests/wavelibBoostTests/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"Bin/Debug/wavelibLibTests"
+			],
+			"targetId" : "wavelibLibTests::@bc1d768faaddb04484e0",
+			"targetIndex" : 49,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "wavelib/unitTests/wavelibBoostTests",
+		"source" : "wavelib/unitTests/wavelibBoostTests"
+	}
+}
