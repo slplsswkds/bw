@@ -1,0 +1,6 @@
+[submodule "fltk"]
+	path = fltk
+	url = https://github.com/fltk/fltk.git
+[submodule "wavelib"]
+	path = wavelib
+	url = https://github.com/rafat/wavelib.git
