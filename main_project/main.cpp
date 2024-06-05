@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <cmath>
 #include "../wavelib/header/wavelib.h"
+#include <algorithm>
 
 double absmax(const double *array, const int N) {
     double max = 0.0;
@@ -39,23 +40,18 @@ int main() {
     const int N = 256;
     const int J = 3;
 
+    const auto inp = new double[N];
+    const auto out = new double[N];
+    const auto diff = new double[N];
 
-    auto name = "db4";
+    const auto temp = get_data(N);
+    std::copy_n(temp, N, inp);
+
+    const auto name = "db4";
     const wave_object obj = wave_init(name); // Initialize the wavelet
-
-    const auto inp = static_cast<double *>(malloc(sizeof(double) * N));
-    auto *out = static_cast<double *>(malloc(sizeof(double) * N));
-    auto *diff = static_cast<double *>(malloc(sizeof(double) * N));
-
-    auto temp = get_data(N);
-    for (int i = 0; i < N; ++i) {
-        inp[i] = temp[i];
-    }
-
     const wt_object wt = wt_init(obj, "dwt", N, J); // Initialize the wavelet transform object
     setDWTExtension(wt, "sym"); // Options are "per" and "sym". Symmetric is the default option
     setWTConv(wt, "direct");
-
     dwt(wt, inp); // Perform DWT
     // DWT output can be accessed using wt->output vector. Use wt_summary to find out how to extract appx and detail coefficients
 
@@ -75,9 +71,9 @@ int main() {
     wave_free(obj);
     wt_free(wt);
 
-    free(inp);
-    free(out);
-    free(diff);
+    delete[] inp;
+    delete[] out;
+    delete[] diff;
 
     return 0;
 }
