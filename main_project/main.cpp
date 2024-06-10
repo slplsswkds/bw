@@ -3,6 +3,9 @@
 #include <cmath>
 #include "../wavelib/header/wavelib.h"
 #include <algorithm>
+#include <fstream>
+#include <print>
+#include <vector>
 
 double absmax(const double *array, const int N) {
     double max = 0.0;
@@ -14,38 +17,32 @@ double absmax(const double *array, const int N) {
     return max;
 }
 
-auto get_data(const int minDataLen) {
-    double temp[1200];
-    FILE *ifp = fopen("../wavelib/test/signal.txt", "r");
-    int i = 0;
-    if (!ifp) {
-        printf("Cannot Open File\n");
-        exit(100);
+auto load_data() {
+    std::vector<double> numbers;
+    // "/home/maks/sin_tan_exp.txt" contain 44101 lines
+    if (std::ifstream dataFile("/home/maks/sin_tan_exp.txt"); dataFile.is_open()) {
+        double number;
+        while (dataFile >> number) {
+            numbers.push_back(number);
+            std::println("{}", number);
+        }
+        dataFile.close();
+    } else {
+        std::println("Unable to open file!");
     }
-    while (!feof(ifp) && i < 1200) {
-        fscanf(ifp, "%lf", &temp[i]);
-        i++;
-    }
-    fclose(ifp);
-
-    if (i < minDataLen) {
-        printf("Not enough data in file\n");
-        exit(101);
-    }
-
-    return temp;
+    return numbers;
 }
 
 int main() {
-    const int N = 256;
-    const int J = 3;
+    const int N = 10240;
+    const int J = 10;
 
     const auto inp = new double[N];
     const auto out = new double[N];
     const auto diff = new double[N];
 
-    const auto temp = get_data(N);
-    std::copy_n(temp, N, inp);
+    auto data = load_data();
+    std::copy_n(&data[0], N, inp);
 
     const auto name = "db4";
     const wave_object obj = wave_init(name); // Initialize the wavelet
