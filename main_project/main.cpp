@@ -50,7 +50,7 @@ auto save_data(const double *data, int size) {
     std::println("Числа були успішно записані у файл ");
 }
 
-std::tuple<double, double, double> freq_detail_min_max(int j, int fs) {
+auto freq_detail_min_max(int j, int fs) -> std::tuple<double, double, double>{
     double minF = 0;
     double midF = fs / std::pow(2, j + 1);
     double maxF = fs / std::pow(2, j);
@@ -93,6 +93,8 @@ int main() {
         diff[i] = out[i] - inp[i];
     }
     printf("\nMAX %g\n", absmax(diff, wt->siglength)); // If Reconstruction succeeded then the output should be a small value.
+    auto rmseVal = rmse(N, inp, out);
+    std::println("\nRMSE(inp, out) = {}", rmseVal);
 
     // wt_summary(wt); // Prints the full summary.
     // for (int i = 0; i < wt->outlength; ++i) {
