@@ -65,6 +65,21 @@ void freq(int j, int fs) {
     }
 }
 
+static double rmse(int N,double *x,double *y) {
+    double rms;
+    int i;
+
+    rms = 0.0;
+
+    for(i = 0; i < N;++i) {
+        rms += (x[i] - y[i]) * (x[i] - y[i]);
+    }
+
+    rms = sqrt(rms/(double)N);
+
+    return rms;
+}
+
 int main() {
     const int N = 44101;
     const int sampleRate = 44100; // Hz
