@@ -20,7 +20,7 @@ double absmax(const double *array, const int N) {
 auto load_data() {
     std::vector<double> numbers;
     // "/home/maks/sin_tan_exp.txt" contain 44101 lines
-    if (std::ifstream dataFile("/home/maks/sin_tan_exp.txt"); dataFile.is_open()) {
+    if (std::ifstream dataFile("/home/maks/devel/bw/assets/sin_tan_exp.txt"); dataFile.is_open()) {
         double number;
         while (dataFile >> number) {
             numbers.push_back(number);
@@ -33,8 +33,8 @@ auto load_data() {
     return numbers;
 }
 
-auto save_data(const double *data, int size) {
-    std::ofstream outFile("/home/maks/sin_tan_exp_inverse_db4.txt");
+auto save_data(const double *data, const int size) {
+    std::ofstream outFile("/home/maks/devel/bw/assets/sin_tan_exp_output.txt");
     // Перевірка, чи файл вдалося відкрити
     if (!outFile.is_open()) {
         std::println("Не вдалося відкрити файл для запису!");
@@ -50,14 +50,14 @@ auto save_data(const double *data, int size) {
     std::println("Числа були успішно записані у файл ");
 }
 
-auto freq_detail_min_max(int j, int fs) -> std::tuple<double, double, double>{
+auto freq_detail_min_max(const int j, const int fs) -> std::tuple<double, double, double> {
     double minF = 0;
     double midF = fs / std::pow(2, j + 1);
     double maxF = fs / std::pow(2, j);
     return std::make_tuple(minF, midF, maxF);
 }
 
-void freq(int j, int fs) {
+void freq(const int j, const int fs) {
     for (int i = 0; i <= j; i++) {
         double min, mid, max;
         std::tie(min, mid, max) = freq_detail_min_max(i, fs);
@@ -65,25 +65,22 @@ void freq(int j, int fs) {
     }
 }
 
-static double rmse(int N,double *x,double *y) {
-    double rms;
-    int i;
+static auto rmse(const int N, const double *x, const double *y) -> double {
+    double rms = 0.0;
 
-    rms = 0.0;
-
-    for(i = 0; i < N;++i) {
+    for (int i = 0; i < N; ++i) {
         rms += (x[i] - y[i]) * (x[i] - y[i]);
     }
 
-    rms = sqrt(rms/(double)N);
+    rms = sqrt(rms / static_cast<double>(N));
 
     return rms;
 }
 
 int main() {
-    const int N = 44101;
-    const int sampleRate = 44100; // Hz
-    const int J = 10;
+    constexpr int N = 44101;
+    constexpr int sampleRate = 44100; // Hz
+    constexpr int J = 10;
 
     freq(J, sampleRate);
 
@@ -107,7 +104,8 @@ int main() {
     for (int i = 0; i < wt->siglength; ++i) {
         diff[i] = out[i] - inp[i];
     }
-    printf("\nMAX %g\n", absmax(diff, wt->siglength)); // If Reconstruction succeeded then the output should be a small value.
+    printf("\nMAX %g\n", absmax(diff, wt->siglength));
+    // If Reconstruction succeeded then the output should be a small value.
     auto rmseVal = rmse(N, inp, out);
     std::println("\nRMSE(inp, out) = {}", rmseVal);
 
