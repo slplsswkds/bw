@@ -33,6 +33,23 @@ auto load_data() {
     return numbers;
 }
 
+auto save_data(const double *data, int size) {
+    std::ofstream outFile("/home/maks/sin_tan_exp_inverse_db4.txt");
+    // Перевірка, чи файл вдалося відкрити
+    if (!outFile.is_open()) {
+        std::println("Не вдалося відкрити файл для запису!");
+    }
+
+    // Запис кожного числа з масиву у новий рядок у файлі
+    for (int i = 0; i < size; ++i) {
+        outFile << data[i] << std::endl;
+    }
+
+    // Закриття файлу
+    outFile.close();
+    std::println("Числа були успішно записані у файл ");
+}
+
 std::tuple<double, double, double> freq_detail_min_max(int j, int fs) {
     double minF = 0;
     double midF = fs / std::pow(2, j + 1);
@@ -41,7 +58,7 @@ std::tuple<double, double, double> freq_detail_min_max(int j, int fs) {
 }
 
 void freq(int j, int fs) {
-    for (int i = 3; i <= j; i++) {
+    for (int i = 0; i <= j; i++) {
         double min, mid, max;
         std::tie(min, mid, max) = freq_detail_min_max(i, fs);
         std::println("for J={}: \t{}Hz\t-\t{}Hz\t-\t{}Hz", i, min, mid, max);
@@ -49,7 +66,7 @@ void freq(int j, int fs) {
 }
 
 int main() {
-    const int N = 44100;
+    const int N = 44101;
     const int sampleRate = 44100; // Hz
     const int J = 10;
 
@@ -78,9 +95,13 @@ int main() {
     printf("\nMAX %g\n", absmax(diff, wt->siglength)); // If Reconstruction succeeded then the output should be a small value.
 
     // wt_summary(wt); // Prints the full summary.
+    // for (int i = 0; i < wt->outlength; ++i) {
+    //     printf("%g ",wt->output[i]);
+    // }
 
     wave_free(obj);
     wt_free(wt);
+    save_data(out, N);
     delete[] inp;
     delete[] out;
     delete[] diff;
