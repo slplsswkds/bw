@@ -6,6 +6,7 @@
 #include <fstream>
 #include <print>
 #include <vector>
+#include <iostream>
 
 double absmax(const double *array, const int N) {
     double max = 0.0;
@@ -33,8 +34,8 @@ auto load_data() {
     return numbers;
 }
 
-auto save_data(const double *data, const int size) {
-    std::ofstream outFile("/home/maks/devel/bw/assets/sin_tan_exp_output.txt");
+auto save_data(const double *data, const int size, const char *path) {
+    std::ofstream outFile(path);
     // Перевірка, чи файл вдалося відкрити
     if (!outFile.is_open()) {
         std::println("Не вдалося відкрити файл для запису!");
@@ -77,10 +78,30 @@ static auto rmse(const int N, const double *x, const double *y) -> double {
     return rms;
 }
 
+auto rezeroConcretLevelTest(const wt_object wt, const int J) {
+    int offset = 0;
+    std::cout << wt->outlength;
+    for (int wtOutputVectorElement = 0; wtOutputVectorElement <= wt->MaxIter; wtOutputVectorElement++) {
+        const auto decompositionLvlSize = wt->length[wtOutputVectorElement];
+
+        if (wtOutputVectorElement == J) {
+            std::cout << "------ LEVEL SIZE = " << decompositionLvlSize << std::endl;
+            std::cout << "------ Iteration № " << wtOutputVectorElement << "-------" << std::endl;
+
+            for (int coefPos = 0; coefPos < decompositionLvlSize; coefPos++) {
+                const auto coef = wt->output[offset + coefPos];
+                wt->output[offset + coefPos] = 0;
+            }
+
+            offset += decompositionLvlSize;
+        }
+    }
+}
+
 int main() {
     constexpr int N = 44101;
     constexpr int sampleRate = 44100; // Hz
-    constexpr int J = 10;
+    constexpr int J = 11;
 
     freq(J, sampleRate);
 
@@ -97,6 +118,7 @@ int main() {
     setDWTExtension(wt, "sym"); // Options are "per" and "sym". Symmetric is the default option
     setWTConv(wt, "direct");
     dwt(wt, inp); // Perform DWT
+    rezeroConcretLevelTest(wt, J);
 
     idwt(wt, out); // Perform IDWT (if needed)
 
@@ -107,7 +129,7 @@ int main() {
     printf("\nMAX %g\n", absmax(diff, wt->siglength));
     // If Reconstruction succeeded then the output should be a small value.
     auto rmseVal = rmse(N, inp, out);
-    std::println("\nRMSE(inp, out) = {}", rmseVal);
+    std::println("\nRMSE(inp, out) = {}\n", rmseVal);
 
     // wt_summary(wt); // Prints the full summary.
     // for (int i = 0; i < wt->outlength; ++i) {
@@ -116,7 +138,7 @@ int main() {
 
     wave_free(obj);
     wt_free(wt);
-    save_data(out, N);
+    save_data(out, N, "/home/maks/devel/bw/assets/sin_tan_exp_output.txt");
     delete[] inp;
     delete[] out;
     delete[] diff;
